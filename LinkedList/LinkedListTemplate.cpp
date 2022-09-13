@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+class ListNode;
+// declaration so that the compiler know and
+//we can use it before it is defined
+
+// Code here
+
+
+
 class ListNode {
     public:
 
