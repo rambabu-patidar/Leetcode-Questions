@@ -23,26 +23,6 @@ class TreeNode {
     
 };
 
-int count = 0;
-int goodNodes(TreeNode* root, int max) {
-    if ( root == nullptr) {
-            return 0;
-    }
-
-    if (root->val >= max) {
-        max = root->val;
-    }
-    
-    if (root->val >= max) {
-       count+= 1;
-    }
-    else {
-         return goodNodes(root->left, max) + goodNodes(root->right, max);
-    }
-    
-   
-        
-}
 
 int main () {
 
@@ -53,6 +33,6 @@ int main () {
     root->right->left = new TreeNode(1);
     root->right->right = new TreeNode(5);
 
-    cout << goodNodes(root, root->val);
+
     return 0;
 }
